@@ -29,6 +29,34 @@ div.divider {
   margin: 2em auto;
   border-bottom: 2px solid black;
 }
+
+.sectionhead {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.sectionhead h1 {
+  font-size: 37px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+#eTextiles {
+  background:#4094d3;
+}
+
+#bodies_tech {
+  background:#fcd606;
+}
+
+#soundstack {
+  background:#f23b74;
+}
+
 .ui-helper-hidden {
   display: none;
 }
@@ -355,6 +383,16 @@ div.divider {
 
 /* Icons
 ----------------------------------*/
+
+
+/* Responsive Images with Mobile First*/
+.img_small {display:block;}
+.img_large {display:none;}
+
+@media all and (min-width: 499px) {
+  .img_small {display:none;}
+  .img_large {display:block;}
+}
 
 /* states and images */
 .ui-icon {
@@ -1988,6 +2026,12 @@ form input.error, form textarea.error {
 .modClients .slick-slider {
   margin-bottom: 10px;
 }
+
+div.clients {
+  display: flex;
+  align-items: center;
+}
+
 .modDefaultSlider .sequence {
   height: 650px;
   position: relative;
@@ -3196,8 +3240,6 @@ body {
   width: 66%;
   margin: 0 auto;
   height: 2px;
-  // CUSTOM: Got rid of the yellow underline
-  // background: #F9CE06;
   display: block;
 }
 
@@ -3205,7 +3247,6 @@ body {
   font-size: 4rem;
 }
 .modSectionHeader.big h3 {
-  // font-weight: normal;
   letter-spacing: 3px;
   font-size: 2.5em;
 }
