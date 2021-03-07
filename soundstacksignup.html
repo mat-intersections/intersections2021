@@ -27,16 +27,47 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Verdana,Arial,sans-serif;
+            min-height: 100%;
+            overflow-x: hidden;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            font-size: 15px;
+            color: #999999;
+            width: 100vw;
+            height: 100%;
+        }
+
+        header,
+        footer {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
         }
 
         header {
-            width: 100vw;
-            padding: 10px;
             background: #5DA292;
-            text-align: center;
-
             margin-bottom: 10px;
+        }
+
+        .footerwrapper {
+            display: flex;
+            flex: 1;
+            align-items: flex-end;
+        }
+
+        footer {
+            margin-top: 10px;
+            background: #EEEEEE;
+        }
+
+        footer img {
+            max-height: 70px;
+            max-width: 80%;
         }
 
         h1 {
@@ -49,53 +80,81 @@
             color: #fff;
         }
 
-        main {
+        a {
+            color: #F9CE06;
+            -moz-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+
+        a:hover {
+            color: #999;
+        }
+
+        .sectionwrapper {
+            width: 100%;
             display: flex;
             justify-content: center;
-            font-size: 15px;
-            color: #999999;
         }
 
         section {
-            max-width: 800px;
             padding: 10px;
+            max-width: 800px;
         }
     </style>
 </head>
 
 
 <body>
-    <header>
-        <h1>SOUNDSTACK - AUDIOVISUAL POINT-CLOUDS WORKSHOP</h1>
-        <h2>Application for active participation</h2>
-    </header>
+
     <main id="main">
 
-        <section>
-            <p>
-                Please see the following information to apply for active participation in the Soundstack - Audiovisual
-                Point-clouds workshop
-                on the 26th of March, 10:00 - 15:00h (GMT).
-            </p>
-            <p>
-                For being part in the workshop you need a good base experience in Unity. For that we need:
+        <header>
+            <h1>SOUNDSTACK - AUDIOVISUAL POINT-CLOUDS WORKSHOP</h1>
+            <h2>Application for active participation</h2>
+        </header>
 
-                <ol>
-                    <li>A short written statement about you and your experiences with Unity (max 1000 characters)</li>
-                    <li>Your best or most advanced Unity project, in the form of a video file (max. 500 MB) or link to
-                        an online video characters)</li>
-                    <li>Photos of your project combined into one .pdf file (max 10 MB)</li>
-                    <li>Your email address</li>
-                    <li>Optional: website link</li>
-                </ol>
+        <div class="sectionwrapper">
+            <section>
+                <p>
+                    Please see the following information to apply for active participation in the Soundstack -
+                    Audiovisual
+                    Point-clouds workshop
+                    on the 26th of March, 10:00 - 15:00h (GMT).
+                </p>
+                <p>
+                    For being part in the workshop you need a good base experience in Unity. For that we need:
 
-                Please send all information as a wetransfer link until <strong>18th March 2021</strong> to:
-                kh[at]raumperspektive.com
-                <br><br>
-                If your application is accepted you will receive a link with further instructions for the workshop,
-                including links to the software and the Unity version number. If you already have Unity installed, it’s
-                a good idea to install Unity hubs to be able to run multiple versions of Unity on the same computer.
-            </p>
-        </section>
+                    <ol>
+                        <li>A short written statement about you and your experiences with Unity (max 1000 characters)
+                        </li>
+                        <li>Your best or most advanced Unity project, in the form of a video file (max. 500 MB) or link
+                            to
+                            an online video characters)</li>
+                        <li>Photos of your project combined into one .pdf file (max 10 MB)</li>
+                        <li>Your email address</li>
+                        <li>Optional: website link</li>
+                    </ol>
+
+                    Please send all information as a wetransfer link until <strong>18th March 2021</strong> to:
+                    kh[at]raumperspektive.com
+                    <br><br>
+                    If your application is accepted you will receive a link with further instructions for the workshop,
+                    including links to the software and the Unity version number. If you already have Unity installed,
+                    it’s
+                    a good idea to install Unity hubs to be able to run multiple versions of Unity on the same computer.
+                </p>
+            </section>
+        </div>
+
+        <div class="footerwrapper">
+            <footer>
+                <p>Soundstack is part of <a href="https://2021.intersections.io">Intersections 2021</a></p>
+                <img src="images/logo-white-noDate.png">
+            </footer>
+        </div>
+
     </main>
+
 </body>
